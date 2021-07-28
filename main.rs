@@ -26,7 +26,7 @@ fn main() {
     for stream in listener.incoming() {
         match stream {
             Ok(stream) => {
-                println!("New connection: {}", stream.peer_addr().unwrap());
+                // println!("New connection: {}", stream.peer_addr().unwrap());
                     // connection succeeded, handle incoming messages
                     handle_client(stream)
                 
